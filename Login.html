@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="Login.css">
+        <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div class="wrapper">
+          <div class="title">
+              صفحه ورود به سایت
+          </div>
+          <form name="vLogin" id="vLogin" method="POST" action="action.php">
+            <div class="form">
+                <div class="input_field">
+                    <input type="text" id="username" name="username" class="input">
+                    <label for="username">نام کاربری</label><br>
+                </div>
+                <p id="username_err" class="error_msg"></p>
+                <div class="input_field">
+                    <input type="password" id="password" name="password" class="input">
+                    <label for="password">رمزعبور</label>
+                </div>
+                <p id="password_err" class="error_msg"></p>
+                <div class="input_field">
+                    <input type="submit" value="ورود"  class="btn">
+                </div>
+            </div>
+          </form>
+      </div> 
+      <script src="Login.js"></script>
+    </body>
+</html>
